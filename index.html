@@ -3,75 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Landing Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: maroon;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        nav a {
-            color: maroon;
-            text-decoration: none;
-            margin: 0 20px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .body-content {
-            padding: 20px;
-        }
-
-        footer {
-            background-color: maroon;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-    </style>
+    <title>A landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script> 
 </head>
 <body>
-    <header>
-        <h1>My Landing Page</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+    <div class="container min-h-screen bg-[url('images/back.jpg')] bg-center bg-cover px-28 py-5 relative">
+        <nav class="flex items-center">
+            <img src="images/logo.png" alt="logo" class="w-20 cursor-pointer">
+            <ul class="flex-1 text-center">
+                <li class="list-none inline-block px-5 rounded-md hover:rounded-lg hover:bg-orange-700 transition-all duration-300"><a href="#" class="no-underline text-white px-2">Home</a></li>
+                <li class="list-none inline-block px-5 rounded-md hover:rounded-lg hover:bg-orange-700 transition-all duration-300"><a href="#" class="no-underline text-white px-2">About</a></li>
+                <li class="list-none inline-block px-5 rounded-md hover:rounded-lg hover:bg-orange-700 transition-all duration-300"><a href="#" class="no-underline text-white px-2">Products</a></li>
+                <li class="list-none inline-block px-5 rounded-md hover:rounded-lg hover:bg-orange-700 transition-all duration-300"><a href="#" class="no-underline text-white px-2">Contact Us</a></li>
+            </ul>
+            <img src="images/cart.png" class="w-11 cursor-pointer">
         </nav>
-    </header>
-
-    <div class="container">
-        <div class="body-content">
-            <h2>Welcome to My Landing Page </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.</p>
+        <div class="text-white mt-48 max-w-xl">
+            <h1 class="text-6xl font-semibold leading-normal">The Art of Burgers</h1>
+            <p>Welcome to our burger haven, where we explore the world of burgers beyond the ordinary. Whether you're a classic connoisseur
+            or an adventurous eater, join us as we delve into the components that make a burger a beloved and diverse culinary delight.</p>
+            <div class="mt-10">
+                <a href="#" class="bg-orange-700 rounded-3xl py-3 px-8 font-medium inline-block mr-4 hover:bg-transparent hover:border-orange-700 hover:text-white duration-300 hover:border border border-transparent">Order Now</a>
+                <a href="">Download App<span class="text-lg inline-block rotate-90">&#10148;</span></a>
+            </div>
         </div>
+        <img src="images/burger.png" alt="burger" class="w-full xl:w-1/2 xl:absolute bottom-0 right-20">
     </div>
-
-    <footer>
-        &copy; 2023 My Landing Page
-    </footer>
 </body>
 </html>
